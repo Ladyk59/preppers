@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/194cc5471e.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="top">
 
     <!-- NAVBAR -->
     <nav>
         <div class="nav__container">
             <ul class="nav__links">
-                <li><a href="#" class="nav__link">Home</a></li>
+                <li><a href="#top" class="nav__link">Home</a></li>
                 <li><a href="#" class="nav__link">Books</a></li>
                 <li><a href="#" class="nav__link">Contact</a></li>
             </ul>
@@ -74,9 +74,17 @@
 
         <!-- BOOKS -->
         <section id="books">
-            <h2>CHECK OUT THESE BOOKS</h2>
-            <div class="books">
+            <h2>CHECK OUT THESE BOOKS AS WELL </h2>
+            <div class="books_header">
+                <select id="filter">
+                    <option value="">Sort</option>
+                    <option value="LOW_TO_HIGH">Price: Low to High</option>
+                    <option value="HIGH_TO_LOW">Price: High to Low</option>
+                    <option value="RATING">Rating</option>
+                </select>
+            </div>
 
+            <div class="books">
                 <div class="book">
                     <figure>
                         <img class="book__img" src="./preppers bible.jpg" alt="Preppers Bible">
@@ -132,7 +140,32 @@
                     </div>
                     <div class="book__price">$22.97</div>
                 </div>
-
+                <div class="book">
+                    <figure>
+                        <img class="book__img" src="./ult surv guide.jpg" alt="Ultimate Survival Guide">
+                    </figure>
+                    <div class="book__rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="book__price">$34.95</div>
+                </div>
+                <div class="book">
+                    <figure>
+                        <img class="book__img" src="./medical surv.jpg" alt="Medical Survival">
+                    </figure>
+                    <div class="book__rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="book__price">$29.95</div>
+                </div>
             </div>
         </section>
 
@@ -145,11 +178,17 @@
                 <img src="./kim logo 2.jpg" alt="Logo">
             </figure>
             <nav class="footer__nav">
-                <a href="#" class="footer__link">Home</a>
+                <a href="#top" class="footer__link">Home</a>
                 <a href="#books" class="footer__link">Books</a>
                 <a href="#" class="footer__link">Contact</a>
             </nav>
+            <div class="footer__social-list">
+                <a href="#" class="footer__social-link">Github</a>
+                <a href="#" class="footer__social-link">LinkedIn</a>
+                <a href="#" class="footer__social-link">Resume</a>
+            </div>
         </div>
+        <div class="footer__copyright">Copyright © 2026 Kim Jones </div>
     </footer>
 
     <script src="script.js"></script>
